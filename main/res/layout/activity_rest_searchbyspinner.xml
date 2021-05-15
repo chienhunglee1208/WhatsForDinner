@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.davidlee1.whats_for_dinner.rest_searchbyspinner"
+    >
+
+    <TextView
+        android:id="@+id/restsrchtv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="搜尋餐廳"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="48sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/restsrchtv_area1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:text="縣市："
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@+id/restsrchtv_title"
+        app:layout_constraintTop_toBottomOf="@+id/restsrchtv_title" />
+
+    <Spinner
+        android:id="@+id/type1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/btn_dropdown"
+        app:layout_constraintTop_toBottomOf="@+id/restsrchtv_area1"
+        app:layout_constraintLeft_toRightOf="@+id/restsrchtv_area1"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/restsrchtv_area2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="鄉鎮市區："
+        app:layout_constraintLeft_toLeftOf="@+id/restsrchtv_title"
+        app:layout_constraintTop_toBottomOf="@+id/type1" />
+
+    <Spinner
+        android:id="@+id/type2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="6dp"
+        android:background="@android:drawable/btn_dropdown"
+        app:layout_constraintTop_toBottomOf="@+id/restsrchtv_area2"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/type1" />
+
+    <TextView
+        android:id="@+id/restsrchtv_fdstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:text="菜色種類："
+        app:layout_constraintLeft_toLeftOf="@+id/restsrchtv_title"
+        app:layout_constraintTop_toBottomOf="@+id/type2" />
+
+    <Spinner
+        android:id="@+id/type3"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/btn_dropdown"
+        app:layout_constraintTop_toBottomOf="@+id/restsrchtv_fdstyle"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/type2" />
+
+    <Button
+        android:id="@+id/restsrchbt_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="搜尋"
+        app:layout_constraintLeft_toRightOf="@+id/restsrchtv_title"
+        app:layout_constraintTop_toBottomOf="@+id/type3" />
+
+</android.support.constraint.ConstraintLayout>
+
